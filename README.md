@@ -5,6 +5,8 @@
 
 ## Build the app from the command line
 
+On Windows you need to specify paths to `JDK/bin` and `Android SDK Build Tools` in `PATH` Environment Variable.
+
 ### Build a debug APK
 
 For immediate app testing and debugging, you can build a debug APK. The debug APK is signed with a debug key provided by the SDK tools and allows debugging through `adb`.
@@ -23,7 +25,7 @@ This creates an APK named `app-debug.apk` in `Build` directory. The file is alre
 
 ### Build a release APK
 
-If you're ready to release and distribute the app, you must build a release APK that is signed with the private key. Ask `keystore.properties` file from the Architect to be able to sign the release APK. `keystore.properties` must be placed in the root directory of the repository before building the APK. To initiate a release build, invoke the `Release`:
+If you're ready to release and distribute the app, you must build a release APK that is signed with the private key. To initiate a release build, invoke the `Release`:
 
 -   On Windows:
 
@@ -34,4 +36,10 @@ If you're ready to release and distribute the app, you must build a release APK 
 -   On Mac or Linux:
     TODO
 
-This creates an APK named `app-release.apk` in `Build` directory. The app signed with the private key is ready for distribution, but you should first read more about how to [publish the app](https://developer.android.com/studio/publish/index.html) and review the [Google Play launch checklist](https://developer.android.com/distribute/tools/launch-checklist.html).
+Provide the keystore password when you are asked to:
+
+```Batchfile
+Keystore password for signer #1:
+```
+
+On success, it creates an APK named `app-release-signed.apk` in `Build` directory. The app signed with the private key is ready for distribution, but you should first read more about how to [publish the app](https://developer.android.com/studio/publish/index.html) and review the [Google Play launch checklist](https://developer.android.com/distribute/tools/launch-checklist.html).
