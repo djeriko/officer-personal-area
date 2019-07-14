@@ -1,5 +1,6 @@
 [![Build status](https://build.appcenter.ms/v0.1/apps/b659d4d8-c0df-4f70-a399-c6071e0122a5/branches/master/badge)](https://appcenter.ms)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/93ba9d7b917348a0a5a342a93342bdcb)](https://www.codacy.com/app/viktor_semenov/officer-personal-area?utm_source=github.com&utm_medium=referral&utm_content=victorx64/officer-personal-area&utm_campaign=Badge_Grade)
+[![0pdd](http://www.0pdd.com/svg?name=victorx64/officer-personal-area)](http://www.0pdd.com/p?name=victorx64/officer-personal-area)
 
 # Officer Personal Area
 
