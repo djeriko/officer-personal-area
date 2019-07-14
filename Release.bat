@@ -5,8 +5,8 @@ if not exist "keystore.properties" (
 )
 
 cd .\Source
-call .\gradlew assembleRelease
+call .\gradlew assembleManualRelease
 mkdir ..\Build
-copy /Y .\app\build\outputs\apk\release\app-release.apk ..\Build\app-release.apk
-echo SUCCESS: 'app-release.apk' created in 'Build' folder
+copy /Y .\app\build\outputs\apk\manualRelease\app-manualRelease.apk ..\Build\app-manualRelease.apk
+echo SUCCESS: APK is created in 'Build' folder
 pause
