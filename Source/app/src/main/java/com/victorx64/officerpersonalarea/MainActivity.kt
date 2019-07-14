@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCenter.start(
-            application, "f833d380-645e-4fc6-9a8f-befb4864076f",
+            application, "ff1e2117-dff5-4134-9e9b-460e2f86b717",
             Analytics::class.java, Crashes::class.java
         )
         super.onCreate(savedInstanceState)
