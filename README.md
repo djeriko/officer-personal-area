@@ -19,8 +19,7 @@ To build a debug APK, open a command line and navigate to the root directory of 
     Debug.bat
     ```
 
--   On Mac or Linux:
-    > @TODO #1 Create a bash script for building a debug APK
+-   On Mac or Linux: @TODO #1 Create a bash script for building a debug APK
 
 This creates an APK named `app-debug.apk` in `Build` directory. The file is already signed with the debug key and aligned with [zipalign](https://developer.android.com/studio/command-line/zipalign), so you can immediately install it on a device.
 
@@ -34,8 +33,7 @@ If you're ready to release and distribute the app, you must build a release APK 
     Release.bat
     ```
 
--   On Mac or Linux:
-    > @TODO #1 Create a bash script for building a release APK
+-   On Mac or Linux: @TODO #1 Create a bash script for building a release APK
 
 Provide the keystore password when you are asked to:
 
