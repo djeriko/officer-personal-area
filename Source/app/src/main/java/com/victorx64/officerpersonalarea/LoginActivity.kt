@@ -5,8 +5,8 @@ import android.os.Bundle
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
-
-class MainActivity : AppCompatActivity() {
+// @todo #13 make login activity, get visual part from figma, add phon firebase authentication
+class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCenter.start(
@@ -14,6 +14,6 @@ class MainActivity : AppCompatActivity() {
             Analytics::class.java, Crashes::class.java
         )
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
     }
 }
