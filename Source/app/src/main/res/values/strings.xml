@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Officer Personal Area</string>
+    // for navigation bar
+    <string name="title_analyzes">Мои Анализы</string>
+    <string name="title_pass_analyzes">Сдать Анализы</string>
+    <string name="title_notifications">Мой Калбкулятор</string>
+    <string name="title_my_profile">Мой Кабинет</string>
+    // for profile
+    <string-array name="men_years">
+        <item>3-18</item>
+        <item>19-29</item>
+        <item>30-59</item>
+        <item>60-79</item>
+        <item>80+</item>
+    </string-array>
+    <string-array name="work_place">
+        <item>KFC</item>
+        <item>MCDonalds</item>
+        <item>Burger King</item>
+        <item>Subway</item>
+        <item>Clocking Bell</item>
+    </string-array>
 </resources>
