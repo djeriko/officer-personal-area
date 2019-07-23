@@ -10,8 +10,8 @@ import com.victorx64.officerpersonalarea.R
 
 class NotKnownFragment: Fragment() {
     companion object {
-        fun newInstance(): ProfileFragment{
-            return ProfileFragment()
+        fun newInstance(s: String): NotKnownFragment{
+            return NotKnownFragment()
         }
     }
 

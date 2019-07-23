@@ -11,8 +11,8 @@ import com.victorx64.officerpersonalarea.R
 class MyIsslFragment : Fragment(){
 
     companion object {
-        fun newInstance(): ProfileFragment{
-            return ProfileFragment()
+        fun newInstance(s: String): MyIsslFragment{
+            return MyIsslFragment()
         }
     }
 

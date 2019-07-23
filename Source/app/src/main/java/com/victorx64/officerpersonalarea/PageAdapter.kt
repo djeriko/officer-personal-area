@@ -16,7 +16,7 @@ class PageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
             0 -> { NotKnownFragment() }
             1 -> { MyIsslFragment() }
             2 -> { DoctorsFragment() }
-           else -> { ProfileFragment() }
+           else -> {return ProfileFragment() }
         }
     }
     override fun getCount(): Int {

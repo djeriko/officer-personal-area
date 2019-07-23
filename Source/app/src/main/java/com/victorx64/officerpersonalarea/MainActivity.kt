@@ -12,20 +12,26 @@ import com.example.healthyworker.MyIsslFragment
 import com.example.healthyworker.NotKnownFragment
 import com.example.healthyworker.ProfileFragment
 import com.google.android.material.navigation.NavigationView
+import com.google.android.material.tabs.TabLayout
 
-class MainActivity : AppCompatActivity(), DoctorsFragment.OnFragmentInteractionListener, MyIsslFragment.OnFragmentInteractionListener, NotKnownFragment.OnFragmentInteractionListener, ProfileFragment.OnFragmentInteractionListener, NavigationView.OnNavigationItemSelectedListener  {
+class MainActivity : AppCompatActivity(), DoctorsFragment.OnFragmentInteractionListener, MyIsslFragment.OnFragmentInteractionListener, NotKnownFragment.OnFragmentInteractionListener, ProfileFragment.OnFragmentInteractionListener, NavigationView.OnNavigationItemSelectedListener {
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
         val id = p0.getItemId()
         var viewPager: ViewPager = findViewById(R.id.viewpager) as ViewPager
         when (id) {
             R.id.not_known -> {
-                viewPager.currentItem = 0 }
+                viewPager.currentItem = 0
+            }
             R.id.navigation_issl -> {
-                viewPager.currentItem = 1 }
+                viewPager.currentItem = 1
+            }
             R.id.navigation_notifications -> {
-                viewPager.currentItem = 2 }
-           R.id.navigation_profile -> {
-               viewPager.currentItem = 3 }
+                viewPager.currentItem = 2
+            }
+            R.id.navigation_profile -> {
+                ProfileFragment.newInstance()
+                viewPager.currentItem = 3
+            }
 
         }
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -41,7 +47,6 @@ class MainActivity : AppCompatActivity(), DoctorsFragment.OnFragmentInteractionL
         setContentView(R.layout.activity_main)
 
 
-
-
     }
 }
+

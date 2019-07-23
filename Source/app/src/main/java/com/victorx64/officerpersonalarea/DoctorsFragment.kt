@@ -10,8 +10,8 @@ import com.victorx64.officerpersonalarea.R
 
 class DoctorsFragment:Fragment() {
     companion object {
-        fun newInstance(): ProfileFragment{
-            return ProfileFragment()
+        fun newInstance(): DoctorsFragment{
+            return DoctorsFragment()
         }
     }
 
