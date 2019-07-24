@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="331dp"
+        app:srcCompat="@drawable/image"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="131dp"
+    />
+    <TextView
+            android:text="Здоровый работник"
+            android:layout_width="227dp"
+            android:layout_height="34dp"
+            android:gravity="center|top"
+        android:layout_marginLeft="76dp"
+        android:textSize="24sp"
+            android:textColor="#219653"
+            android:id="@+id/textView2"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/imageView2"/>
+</RelativeLayout>
