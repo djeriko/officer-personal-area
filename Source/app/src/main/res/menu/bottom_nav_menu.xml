@@ -2,23 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-            android:id="@+id/not_known"
+            android:id="@+id/my_researches"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/title_analyzes"/>
 
     <item
-            android:id="@+id/navigation_issl"
+            android:id="@+id/my_doctors"
             android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="@string/title_pass_analyzes"/>
+            android:title="@string/title_my_doctors"/>
+
 
     <item
-            android:id="@+id/navigation_notifications"
-            android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/title_notifications"/>
-    <item
-            android:id="@+id/navigation_profile"
+            android:id="@+id/my_profile"
             android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="Личный Кабинет">
+            android:title="Мой Кабинет">
 
     </item>
 

@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.victorx64.officerpersonalarea.R
 
-class MyIsslFragment : Fragment(){
+class MyResearcheslFragment : Fragment(){
 
     companion object {
-        fun newInstance(s: String): MyIsslFragment{
-            return MyIsslFragment()
+        fun newInstance(s: String): MyResearcheslFragment{
+            return MyResearcheslFragment()
         }
     }
 

@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">Officer Personal Area</string>
     // for navigation bar
-    <string name="title_analyzes">Мои Анализы</string>
-    <string name="title_pass_analyzes">Сдать Анализы</string>
-    <string name="title_notifications">Мой Калбкулятор</string>
+    <string name="title_analyzes">Мои Исследования</string>
+    <string name="title_my_doctors">Врачи</string>
     <string name="title_my_profile">Мой Кабинет</string>
     // for profile
     <string-array name="men_years">

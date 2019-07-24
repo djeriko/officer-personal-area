@@ -4,8 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.healthyworker.DoctorsFragment
-import com.example.healthyworker.MyIsslFragment
-import com.example.healthyworker.NotKnownFragment
+import com.example.healthyworker.MyResearcheslFragment
 import com.example.healthyworker.ProfileFragment
 
 class PageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
@@ -13,10 +12,10 @@ class PageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         return when (position){
-            0 -> { NotKnownFragment() }
-            1 -> { MyIsslFragment() }
-            2 -> { DoctorsFragment() }
-           else -> {return ProfileFragment() }
+
+            0 -> { MyResearcheslFragment() }
+            1 -> { DoctorsFragment() }
+          else  -> {return ProfileFragment() }
         }
     }
     override fun getCount(): Int {
