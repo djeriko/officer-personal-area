@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "776197757994",
+    "firebase_url": "https://pushnotificationproject-e6c70.firebaseio.com",
+    "project_id": "pushnotificationproject-e6c70",
+    "storage_bucket": "pushnotificationproject-e6c70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776197757994:android:06e1daa562a22a53",
+        "android_client_info": {
+          "package_name": "com.victorx64.officerpersonalarea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776197757994-hdli0vsuobc575nsehc4dfln5qpub8hs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.victorx64.officerpersonalarea",
+            "certificate_hash": "48887b2ace26e4704b1dfe2caeb9246f7b2ae5a2"
+          }
+        },
+        {
+          "client_id": "776197757994-tf5cclvjsp7e29u8aditmh9msa388kmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa0BsNVcIyK6j9XA0DCRE4kMEhgSfAuHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776197757994-tf5cclvjsp7e29u8aditmh9msa388kmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

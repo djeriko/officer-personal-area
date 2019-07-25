@@ -19,7 +19,7 @@ class DoctorsFragment:Fragment() {
             val args = Bundle()
             val fragment = DoctorsFragment()
             args.putInt(ARG_COLUMN_COUNT, columnCount)
-            fragment.arguments =args
+            fragment.arguments = args
             return  fragment
         }
     }

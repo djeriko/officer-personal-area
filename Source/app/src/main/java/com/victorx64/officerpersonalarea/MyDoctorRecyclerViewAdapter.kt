@@ -42,9 +42,5 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
             mName = mView.findViewById<View>(R.id.doc_name) as TextView
             mCardView = mView.findViewById<View>(R.id.PersonalAreaExpannableCardView) as CardView
         }
-
-
     }
-
-
 }

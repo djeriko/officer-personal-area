@@ -10,12 +10,13 @@ object DoctorsContent {
     }
 
     init {
-        val doctorItem = DoctorItem("1", "Иванов Иван Иванович", R.drawable.doctor_image)
-        val doctorItem2 = DoctorItem("1", "Иванов Иван Иванович", R.drawable.doctor_image)
-        val doctorItem3 = DoctorItem("1", "Иванов Иван Иванович", R.drawable.doctor_image)
-        val doctorItem4 = DoctorItem("1", "Иванов Иван Иванович", R.drawable.doctor_image)
-        val doctorItem5 = DoctorItem("1", "Иванов Иван Иванович", R.drawable.doctor_image)
-        val doctorItem6 = DoctorItem("1", "Иванов Иван Иванович", R.drawable.doctor_image)
+        val name: String = "Иванов Иван Иванович"
+        val doctorItem = DoctorItem("1", name , R.drawable.doctor_image)
+        val doctorItem2 = DoctorItem("1", name, R.drawable.doctor_image)
+        val doctorItem3 = DoctorItem("1", name, R.drawable.doctor_image)
+        val doctorItem4 = DoctorItem("1", name, R.drawable.doctor_image)
+        val doctorItem5 = DoctorItem("1", name, R.drawable.doctor_image)
+        val doctorItem6 = DoctorItem("1", name, R.drawable.doctor_image)
         ITEMS.add(doctorItem)
         ITEMS.add(doctorItem2)
         ITEMS.add(doctorItem3)

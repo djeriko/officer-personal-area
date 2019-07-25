@@ -1,11 +1,13 @@
 package com.victorx64.officerpersonalarea
 
 import android.app.ActionBar
+import android.app.Notification
 import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationCompat
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.healthyworker.DoctorsFragment
@@ -37,6 +39,9 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         replaceFragment(MyResearcheslFragment())
+        //push notification
+
+        //
 
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
@@ -47,5 +52,7 @@ class MainActivity : AppCompatActivity(){
         fragmentTransaction.replace(R.id.fragmentContainer, fragment)
         fragmentTransaction.commit()
     }
+
+
 }
 
