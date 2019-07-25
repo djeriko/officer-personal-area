@@ -1,13 +1,11 @@
 package com.victorx64.officerpersonalarea
 
 import android.app.ActionBar
-import android.app.Notification
 import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NotificationCompat
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.healthyworker.DoctorsFragment
@@ -22,15 +20,14 @@ class MainActivity : AppCompatActivity(){
         when(item.itemId){
             R.id.my_researches -> {
                 replaceFragment(MyResearcheslFragment())
-                return@OnNavigationItemSelectedListener true
+
             }
             R.id.my_doctors -> {
                 replaceFragment(DoctorsFragment())
-                return@OnNavigationItemSelectedListener true
+
             }
             else -> {
                 replaceFragment(ProfileFragment())
-                return@OnNavigationItemSelectedListener true
             }
         }
     }
@@ -39,20 +36,15 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         replaceFragment(MyResearcheslFragment())
-        //push notification
-
-        //
 
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
     }
 
-    private fun replaceFragment(fragment : Fragment){
+    private fun replaceFragment(fragment : Fragment): Boolean {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragmentContainer, fragment)
         fragmentTransaction.commit()
-    }
-
-
+    return true }
 }
 
