@@ -9,11 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.victorx64.officerpersonalarea.DoctorsContent
-import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter
-import com.victorx64.officerpersonalarea.R
+import com.victorx64.officerpersonalarea.*
 
-class DoctorsFragment:Fragment() {
+class MyResearcheslFragment : Fragment(){
     companion object {
         private val ARG_COLUMN_COUNT= "column-count"
         fun newInstance(columnCount: Int): DoctorsFragment{
@@ -34,20 +32,20 @@ class DoctorsFragment:Fragment() {
 
     private var mColumnCount = 1
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.doctors_layout,container,false)
-    //set adapter
+        val view = inflater.inflate(R.layout.researches_fragment_layout,container,false)
+        //set adapter
         val context = view.context
-        val recyclerView = view.findViewById<RecyclerView>(R.id.doctors_list)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.researches_list)
         if (mColumnCount <= 1) {
             recyclerView.layoutManager = LinearLayoutManager(context)
         } else {
             recyclerView.layoutManager = GridLayoutManager(context, mColumnCount)
         }
-        recyclerView.adapter = MyDoctorRecyclerViewAdapter(DoctorsContent.ITEMS,mListener = null)
+        recyclerView.adapter = MyResearchesRecyclerViewAdapter(ResearchesContent.ITEMS,mListener = null)
         return view
     }
     interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        fun onListFragmentsInteraction(item: DoctorsContent.DoctorItem)
+        fun onListFragmentsInteraction(item: ResearchesContent.ResearchItem)
     }
 }
