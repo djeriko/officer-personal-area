@@ -20,15 +20,14 @@ class MainActivity : AppCompatActivity(){
         when(item.itemId){
             R.id.my_researches -> {
                 replaceFragment(MyResearcheslFragment())
-                return@OnNavigationItemSelectedListener true
+
             }
             R.id.my_doctors -> {
                 replaceFragment(DoctorsFragment())
-                return@OnNavigationItemSelectedListener true
+
             }
             else -> {
                 replaceFragment(ProfileFragment())
-                return@OnNavigationItemSelectedListener true
             }
         }
     }
@@ -42,10 +41,10 @@ class MainActivity : AppCompatActivity(){
 
     }
 
-    private fun replaceFragment(fragment : Fragment){
+    private fun replaceFragment(fragment : Fragment): Boolean {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragmentContainer, fragment)
         fragmentTransaction.commit()
-    }
+    return true }
 }
 
