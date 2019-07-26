@@ -26,9 +26,9 @@ class MyResearchesRecyclerViewAdapter(private val mValues: List<ResearchesConten
         holder.mImage.setImageResource(mValues[position].imageUrl)
         holder.mCabinet.text = mValues[position].cabinet
 
-//        holder.mView.setOnClickListener {
-//            mListener?.onListFragmentsInteraction(holder.mItem!!)
-//        }
+        holder.mView.setOnClickListener {
+            mListener?.onListFragmentsInteraction(holder.mItem!!)
+       }
     }
 
     class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {

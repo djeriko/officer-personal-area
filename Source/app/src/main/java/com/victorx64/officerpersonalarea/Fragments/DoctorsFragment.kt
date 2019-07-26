@@ -27,7 +27,7 @@ class DoctorsFragment:Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (arguments != null ) {
-            mColumnCount = arguments!!.getInt(ARG_COLUMN_COUNT)
+            mColumnCount = arguments?.getInt(ARG_COLUMN_COUNT)!!
         }
     }
 
