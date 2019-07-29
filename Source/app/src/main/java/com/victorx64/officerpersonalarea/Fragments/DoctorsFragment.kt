@@ -14,13 +14,13 @@ import com.victorx64.officerpersonalarea.R
 
 class DoctorsFragment : Fragment() {
     /**
-     * DoctorsFragment code
+     DoctorsFragment code
      */
     companion object {
         private val ARG_COLUMN_COUNT = "column-count"
         fun newInstance(columnCount: Int): DoctorsFragment {
             /**
-             *for nav-bar
+              for nav-bar
              */
             val args = Bundle()
             val fragment = DoctorsFragment()
