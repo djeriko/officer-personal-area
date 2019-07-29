@@ -12,29 +12,35 @@ import com.victorx64.officerpersonalarea.DoctorsContent
 import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter
 import com.victorx64.officerpersonalarea.R
 
-class DoctorsFragment:Fragment() {
+class DoctorsFragment : Fragment() {
+    /**
+     * DoctorsFragment code
+     */
     companion object {
-        private val ARG_COLUMN_COUNT= "column-count"
-        fun newInstance(columnCount: Int): DoctorsFragment{
+        private val ARG_COLUMN_COUNT = "column-count"
+        fun newInstance(columnCount: Int): DoctorsFragment {
+            /**
+             *for nav-bar
+             */
             val args = Bundle()
             val fragment = DoctorsFragment()
             args.putInt(ARG_COLUMN_COUNT, columnCount)
             fragment.arguments = args
-            return  fragment
+            return fragment
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (arguments != null ) {
+        if (arguments != null) {
             mColumnCount = arguments?.getInt(ARG_COLUMN_COUNT)!!
         }
     }
 
     private var mColumnCount = 1
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.doctors_fragment_layout,container,false)
-    //set adapter
+        val view = inflater.inflate(R.layout.doctors_fragment_layout, container, false)
+        //set adapter
         val context = view.context
         val recyclerView = view.findViewById<RecyclerView>(R.id.doctors_list)
         if (mColumnCount <= 1) {
@@ -42,11 +48,14 @@ class DoctorsFragment:Fragment() {
         } else {
             recyclerView.layoutManager = GridLayoutManager(context, mColumnCount)
         }
-        recyclerView.adapter = MyDoctorRecyclerViewAdapter(DoctorsContent.ITEMS,mListener = null)
+        recyclerView.adapter = MyDoctorRecyclerViewAdapter(DoctorsContent.ITEMS, mListener = null)
         return view
     }
+
     interface OnListFragmentInteractionListener {
-        // TODO: Update argument type and name
+        /**
+         *for recycleView
+         */
         fun onListFragmentsInteraction(item: DoctorsContent.DoctorItem)
-}
+    }
 }

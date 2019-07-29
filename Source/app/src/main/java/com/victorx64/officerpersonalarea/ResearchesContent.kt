@@ -1,9 +1,15 @@
 package com.victorx64.officerpersonalarea
 
 object ResearchesContent {
+    /**
+     *Content for Research Content
+     */
     val ITEMS: MutableList<ResearchItem> = ArrayList()
 
     class ResearchItem(val id: String, val title: String, val cabinet: String, val imageUrl: Int) {
+        /**
+         *for items
+         */
         override fun toString(): String {
             return title
         }

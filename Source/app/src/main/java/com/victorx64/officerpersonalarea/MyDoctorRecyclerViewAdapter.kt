@@ -18,6 +18,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.healthyworker.DoctorsFragment
 
 class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.DoctorItem>, private val mListener: DoctorsFragment.OnListFragmentInteractionListener?) : RecyclerView.Adapter<MyDoctorRecyclerViewAdapter.ViewHolder>() {
+    /**
+     *Doctor RecyclerView Code
+     */
     override fun getItemCount(): Int {
         return mValues.size
     }
@@ -39,6 +42,9 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
     }
 
     class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView),View.OnClickListener {
+        /**
+         *items for recyclerview
+         */
         val mName: TextView
         val mImage: ImageView
         val mCardView: CardView
@@ -48,17 +54,20 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
         val mCollapseButton : ImageButton
 
         init {
-            mImage = mView.findViewById<View>(R.id.doc_image) as ImageView
-            mName = mView.findViewById<View>(R.id.doc_name) as TextView
-            mCardView = mView.findViewById<View>(R.id.PersonalAreaExpannableCardView) as CardView
-            mAbout = mView.findViewById<View>(R.id.doc_item_about) as TextView
-            mExpandButton = mView.findViewById(R.id.doc_expand_button) as ImageButton
+            mImage = mView.findViewById(R.id.doc_image)
+            mName = mView.findViewById(R.id.doc_name)
+            mCardView = mView.findViewById(R.id.PersonalAreaExpannableCardView)
+            mAbout = mView.findViewById(R.id.doc_item_about)
+            mExpandButton = mView.findViewById(R.id.doc_expand_button)
             mExpandButton.setOnClickListener(this)
-            mCollapseButton = mView.findViewById(R.id.doc_collapse_button) as ImageButton
+            mCollapseButton = mView.findViewById(R.id.doc_collapse_button)
             mCollapseButton.setOnClickListener(this)
         }
 
         fun Visible_mAbout() {
+            /**
+             *visibility for about_title
+             */
             mAbout.visibility = View.VISIBLE
         }
 
@@ -85,6 +94,9 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
         companion object {
 
             fun expand(v: View) {
+                /**
+                 *expand function
+                 */
                 v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
                 val targetHeight = v.measuredHeight
                 val star = targetHeight
@@ -107,12 +119,15 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
             }
 
             fun collapse(v: View) {
+                /**
+                 *collapse function
+                 */
                 val initialHeight = v.measuredHeight
 
                 val a = object : Animation() {
 
                     override fun applyTransformation(interpolatedTime: Float, t: Transformation) {
-                        val layoutParams = v.layoutParams as LinearLayout.LayoutParams
+                        val layoutParams = v.layoutParams
                         layoutParams.height = (initialHeight + (329 - initialHeight) * interpolatedTime).toInt()
                         layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
                         v.layoutParams = layoutParams
