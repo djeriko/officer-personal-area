@@ -1,9 +1,14 @@
 package com.victorx64.officerpersonalarea
-
+/**
+*Content for DoctorsRecycleView
+ */
 object DoctorsContent {
     val ITEMS: MutableList<DoctorItem> = ArrayList()
-
+    /**
+     *Content for DoctorsRecycleView returning string
+     */
     class DoctorItem(val id: String, val text: String, val imageUrl: Int) {
+
         override fun toString(): String {
             return text
         }
