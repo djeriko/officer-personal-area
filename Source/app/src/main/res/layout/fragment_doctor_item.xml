@@ -9,8 +9,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/PersonalAreaExpannableCardView"
-        android:layout_width="396dp"
-        android:layout_height="116dp"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
         android:layout_margin="5dp"
         android:animateLayoutChanges="true"
         android:elevation="30dp"
@@ -18,7 +18,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="124dp">
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:id="@+id/doc_expand_button"
@@ -70,8 +70,8 @@
                 android:id="@+id/doc_item_about"
                 android:layout_width="279dp"
                 android:layout_height="66dp"
-                android:layout_marginStart="52dp"
-                android:layout_marginBottom="28dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginBottom="52dp"
                 android:text="Ежедневно около 800 сотрудников компании делают все возможное, чтобы на складах и прилавках наших магазинов были только свежие и качественные продукты"
                 android:textColor="#4A4956"
                 android:textSize="14sp"
