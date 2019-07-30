@@ -13,6 +13,7 @@ import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter
 import com.victorx64.officerpersonalarea.R
 
 class DoctorsFragment : Fragment() {
+    // testing for documentation
     /**
      DoctorsFragment code
      */
