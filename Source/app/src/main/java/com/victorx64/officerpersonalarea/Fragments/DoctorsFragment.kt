@@ -13,9 +13,9 @@ import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter
 import com.victorx64.officerpersonalarea.R
 
 class DoctorsFragment : Fragment() {
-    /**
-     * DoctorsFragment code
-     * example of documentation 
+    /** ffdf
+     *  fef sf dsf
+     * example of documentation
      * @author need to know how to solve this problem
      */
     companion object {
