@@ -13,15 +13,16 @@ import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter
 import com.victorx64.officerpersonalarea.R
 
 class DoctorsFragment : Fragment() {
-    // testing for documentation
     /**
-     DoctorsFragment code
+     * DoctorsFragment code
+     * example of documentation 
+     * @author need to know how to solve this problem
      */
     companion object {
         private val ARG_COLUMN_COUNT = "column-count"
         fun newInstance(columnCount: Int): DoctorsFragment {
             /**
-              for nav-bar
+            *for nav-bar
              */
             val args = Bundle()
             val fragment = DoctorsFragment()
