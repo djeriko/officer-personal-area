@@ -103,7 +103,7 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
                 v.visibility = VISIBLE
                 val a = object : Animation() {
                     override fun applyTransformation(interpolatedTime: Float, t: Transformation) {
-                        val layoutParams = v.layoutParams as LinearLayout.LayoutParams
+                        val layoutParams = v.layoutParams
                         layoutParams.height = (targetHeight + (600 - targetHeight) * interpolatedTime).toInt()
                         layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
                         v.layoutParams = layoutParams

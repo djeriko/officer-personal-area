@@ -36,7 +36,7 @@ class MyResearchesRecyclerViewAdapter(private val mValues: List<ResearchesConten
         holder.mCabinet.text = mValues[position].cabinet
 
         holder.mView.setOnClickListener {
-            mListener?.onListFragmentsInteraction(holder.mItem!!)
+            mListener?.onListFragmentsInteraction((holder.mItem) as? Int  )?: 0
        }
     }
 

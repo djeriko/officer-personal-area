@@ -1,6 +1,5 @@
 package com.example.healthyworker
 
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -56,6 +55,6 @@ class MyResearcheslFragment : Fragment(){
         /**
          *for recycle-view
          */
-        fun onListFragmentsInteraction(item: ResearchesContent.ResearchItem)
+        fun onListFragmentsInteraction(item: Int?)
     }
 }
