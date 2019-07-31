@@ -15,10 +15,12 @@ import com.example.healthyworker.MyResearcheslFragment
 import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter.ViewHolder.Companion.collapse
 import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter.ViewHolder.Companion.expand
 
+/**
+ * something need to write 
+ */
 class MyResearchesRecyclerViewAdapter(private val mValues: List<ResearchesContent.ResearchItem>, private val mListener: MyResearcheslFragment.OnListFragmentInteractionListener?) : RecyclerView.Adapter<MyResearchesRecyclerViewAdapter.ViewHolder>() {
-    /**
-     *Researches recycler view code
-     */
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyResearchesRecyclerViewAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.fragment_researches_item, parent, false)
