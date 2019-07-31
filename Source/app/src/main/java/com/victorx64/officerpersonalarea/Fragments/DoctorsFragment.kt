@@ -39,7 +39,7 @@ class DoctorsFragment : Fragment() {
         }
     }
 
-    private var mColumnCount = 1
+    private var mColumnCount : Int = 1
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.doctors_fragment_layout, container, false)
         //set adapter
