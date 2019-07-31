@@ -33,7 +33,7 @@ class MyResearcheslFragment : Fragment(){
         super.onCreate(savedInstanceState)
         if (arguments != null ) {
 
-             mColumnCount = ((arguments?.get(ARG_COLUMN_COUNT))as Int?) ?: 0
+             mColumnCount = (((arguments?.get(ARG_COLUMN_COUNT))as Int?) ?: 0)
                      //did it worked?
         }
     }
