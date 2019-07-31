@@ -16,7 +16,8 @@ import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter.ViewHolder.
 import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter.ViewHolder.Companion.expand
 
 /**
- * something need to write 
+ * something need to write
+ * bla bla bla
  */
 class MyResearchesRecyclerViewAdapter(private val mValues: List<ResearchesContent.ResearchItem>, private val mListener: MyResearcheslFragment.OnListFragmentInteractionListener?) : RecyclerView.Adapter<MyResearchesRecyclerViewAdapter.ViewHolder>() {
 
