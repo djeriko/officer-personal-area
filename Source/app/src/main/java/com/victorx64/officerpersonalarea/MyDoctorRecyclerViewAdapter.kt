@@ -31,7 +31,7 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
         holder.mImage.setImageResource(mValues[position].imageUrl)
 
         holder.mView.setOnClickListener {
-            mListener?.onListFragmentsInteraction(holder.mItem!!)
+            mListener?.onListFragmentsInteraction((holder.mItem) as? Int  )?: 0
         }
     }
 

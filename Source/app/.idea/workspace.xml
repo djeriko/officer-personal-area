@@ -11,7 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aa66ce6-7d52-4cba-9c7c-56551413360e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/MyResearcheslFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/MyResearcheslFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/DoctorsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/DoctorsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyDoctorRecyclerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyDoctorRecyclerViewAdapter.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,17 +40,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/DoctorsFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            <state relative-caret-position="272">
+              <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyDoctorRecyclerViewAdapter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="33" column="60" lean-forward="true" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/MyResearcheslFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
-              <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -144,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MainActivity.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/DoctorsContent.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyDoctorRecyclerViewAdapter.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyResearchesRecyclerViewAdapter.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/ResearchesContent.kt" />
         <option value="$PROJECT_DIR$/src/main/res/layout/fragment_researches_item.xml" />
@@ -154,8 +163,9 @@
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/researches_fragment_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/horizontal_progress_bar.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/DoctorsFragment.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/MyResearcheslFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/DoctorsFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyDoctorRecyclerViewAdapter.kt" />
       </list>
     </option>
   </component>
@@ -173,7 +183,35 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="officerpersonalarea" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="officerpersonalarea" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -287,7 +325,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.502439" side_tool="true" weight="0.32980332" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49756098" weight="0.22919819" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49756098" visible="true" weight="0.22919819" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.502439" side_tool="true" weight="0.32980332" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -504,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyDoctorRecyclerViewAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyResearchesRecyclerViewAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -608,17 +639,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/DoctorsFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/MyResearcheslFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="35" column="70" lean-forward="true" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/Fragments/DoctorsFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/victorx64/officerpersonalarea/MyDoctorRecyclerViewAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="33" column="60" lean-forward="true" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
         </state>
       </provider>
     </entry>
