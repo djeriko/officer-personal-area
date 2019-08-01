@@ -9,17 +9,16 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.victorx64.officerpersonalarea.*
-
+/**
+ *Researches fragment code
+ */
 class MyResearcheslFragment : Fragment(){
-    /**
-     *Researches fragment code
-     */
     companion object {
         private val ARG_COLUMN_COUNT= "column-count"
+        /**
+         *for nav-bar
+         */
         fun newInstance(columnCount: Int): DoctorsFragment{
-            /**
-             *for nav-bar
-             */
             val args = Bundle()
             val fragment = DoctorsFragment()
             args.putInt(ARG_COLUMN_COUNT, columnCount)
@@ -51,10 +50,10 @@ class MyResearcheslFragment : Fragment(){
         recyclerView.adapter = MyResearchesRecyclerViewAdapter(ResearchesContent.ITEMS,mListener = null)
         return view
     }
+    /**
+     *for recycle-view
+     */
     interface OnListFragmentInteractionListener {
-        /**
-         *for recycle-view
-         */
         fun onListFragmentsInteraction(item: Int?)
     }
 }

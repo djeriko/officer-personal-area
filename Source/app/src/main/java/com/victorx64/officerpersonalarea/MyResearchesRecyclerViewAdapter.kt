@@ -42,15 +42,15 @@ class MyResearchesRecyclerViewAdapter(private val mValues: List<ResearchesConten
             mListener?.onListFragmentsInteraction((holder.mItem) as? Int  )?: 0
        }
     }
-
+    /**
+     *items for recycler view
+     */
     class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView),View.OnClickListener {
         /**
-         *items for recycler view
-         */
+         *function for visibility
+         *  */
         fun Visibility_mAbout(){
-            /**
-             *function for visibility
-             *  */
+
             mAbout.visibility = VISIBLE
         }
 

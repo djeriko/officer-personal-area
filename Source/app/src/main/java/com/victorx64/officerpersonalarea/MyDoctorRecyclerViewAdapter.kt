@@ -16,11 +16,11 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.healthyworker.DoctorsFragment
-
+/**
+ *Doctor RecyclerView Code
+ */
 class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.DoctorItem>, private val mListener: DoctorsFragment.OnListFragmentInteractionListener?) : RecyclerView.Adapter<MyDoctorRecyclerViewAdapter.ViewHolder>() {
-    /**
-     *Doctor RecyclerView Code
-     */
+
     override fun getItemCount(): Int {
         return mValues.size
     }
@@ -40,11 +40,11 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
                 .inflate(R.layout.fragment_doctor_item, parent, false)
         return ViewHolder(view)
     }
-
+    /**
+     *items for recyclerview
+     */
     class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView),View.OnClickListener {
-        /**
-         *items for recyclerview
-         */
+
         val mName: TextView
         val mImage: ImageView
         val mCardView: CardView
@@ -63,11 +63,10 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
             mCollapseButton = mView.findViewById(R.id.doc_collapse_button)
             mCollapseButton.setOnClickListener(this)
         }
-
+        /**
+         *visibility for about_title
+         */
         fun Visible_mAbout() {
-            /**
-             *visibility for about_title
-             */
             mAbout.visibility = View.VISIBLE
         }
 
@@ -92,11 +91,10 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
         }
 
         companion object {
-
+            /**
+             *expand function
+             */
             fun expand(v: View) {
-                /**
-                 *expand function
-                 */
                 v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
                 val targetHeight = v.measuredHeight
                 val star = targetHeight
@@ -117,12 +115,11 @@ class MyDoctorRecyclerViewAdapter(private val mValues: List<DoctorsContent.Docto
                 a.duration = 400
                 v.startAnimation(a)
             }
-
+            /**
+             *collapse function
+             */
             fun collapse(v: View) {
-                /**
-                 *collapse function
-                 */
-                val initialHeight = v.measuredHeight
+                    val initialHeight = v.measuredHeight
 
                 val a = object : Animation() {
 

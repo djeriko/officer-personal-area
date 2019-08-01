@@ -11,19 +11,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.victorx64.officerpersonalarea.DoctorsContent
 import com.victorx64.officerpersonalarea.MyDoctorRecyclerViewAdapter
 import com.victorx64.officerpersonalarea.R
-
+/**
+ * Code for Doctor Fragment
+ */
 class DoctorsFragment : Fragment() {
-    /** ffdf
-     *  fef sf dsf
-     * example of documentation
-     * @author need to know how to solve this problem
-     */
+
     companion object {
         private val ARG_COLUMN_COUNT = "column-count"
+        /**
+         *for nav-bar
+         */
         fun newInstance(columnCount: Int): DoctorsFragment {
-            /**
-            *for nav-bar
-             */
             val args = Bundle()
             val fragment = DoctorsFragment()
             args.putInt(ARG_COLUMN_COUNT, columnCount)
@@ -53,11 +51,11 @@ class DoctorsFragment : Fragment() {
         recyclerView.adapter = MyDoctorRecyclerViewAdapter(DoctorsContent.ITEMS, mListener = null)
         return view
     }
-
+    /**
+     *for recycleView
+     */
     interface OnListFragmentInteractionListener {
-        /**
-         *for recycleView
-         */
+
         fun onListFragmentsInteraction(item: Int?)
     }
 }
