@@ -55,7 +55,9 @@ class DoctorsFragment : Fragment() {
      *for recycleView
      */
     interface OnListFragmentInteractionListener {
-
+        /**
+         * fin for nav-bar
+         */
         fun onListFragmentsInteraction(item: Int?)
     }
 }

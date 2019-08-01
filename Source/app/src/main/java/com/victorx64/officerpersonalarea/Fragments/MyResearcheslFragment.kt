@@ -54,6 +54,9 @@ class MyResearcheslFragment : Fragment(){
      *for recycle-view
      */
     interface OnListFragmentInteractionListener {
+        /**
+         * fun for nav-bar
+         */
         fun onListFragmentsInteraction(item: Int?)
     }
 }
