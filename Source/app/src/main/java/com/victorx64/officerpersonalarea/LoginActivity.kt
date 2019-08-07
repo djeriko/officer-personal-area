@@ -26,8 +26,8 @@ class LoginActivity : AppCompatActivity() {
         myWebView = findViewById(R.id.WebView)
         WebView.settings.javaScriptEnabled = true
         WebView.loadUrl("https://officer-persomal-area.web.app/")
-        WebView.getSettings().setLoadWithOverviewMode(true);
-        WebView.getSettings().setUseWideViewPort(true);
+        WebView.getSettings().setLoadWithOverviewMode(true)
+        WebView.getSettings().setUseWideViewPort(true)
         WebView.addJavascriptInterface(WebAppInterface(this), "Android")
 
 //        login_button.setOnClickListener{
